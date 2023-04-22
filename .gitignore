@@ -1,0 +1,24 @@
+# Ignore Python cache files
+*.pyc
+__pycache__/
+
+# Ingore yolov5 folder
+yolov5/
+
+# Ignore Flask cache and session files
+instance/
+webapp/__pycache__/
+webapp/static/.webassets-cache/
+webapp/static/css/.sass-cache/
+webapp/templates/**/*cache*
+
+# Ignore environment files
+.venv/
+.env
+
+# Ignore database files
+*.db
+*.sqlite3
+
+# Ignore log files
+*.log

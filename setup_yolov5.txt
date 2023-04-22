@@ -1,0 +1,9 @@
+# clone YOLOv5 repository
+!git clone https://github.com/ultralytics/yolov5  # clone repo
+%cd yolov5
+!git reset --hard fbe67e465375231474a2ad80a4389efc77ecff99
+
+!pip install -qr requirements.txt  # install dependencies (ignore errors)
+
+pip install torch==1.8.0
+pip install torchvision==0.9.0
