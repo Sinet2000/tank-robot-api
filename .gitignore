@@ -15,6 +15,7 @@ webapp/templates/**/*cache*
 # Ignore environment files
 .venv/
 .env
+miniconda/
 
 # Ignore database files
 *.db
