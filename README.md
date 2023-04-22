@@ -6,6 +6,7 @@
 
 - Python 3.8 or higher
 - Git
+- Tested only on Raspberry PI OS
 
 ## Installation
 
