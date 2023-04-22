@@ -9,3 +9,4 @@ snakeviz==2.1.1
 eventlet==0.33.3
 opencv-python==4.7.0.72
 gevent-websocket==0.10.1
+flake8
