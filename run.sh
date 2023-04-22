@@ -40,4 +40,5 @@ pip install torchvision==0.9.0
 
 cd ..
 # Run the app
+export APP_ENV=development
 python app.py
