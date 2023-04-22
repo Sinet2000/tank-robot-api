@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the path to the yolov5 folder
-yolov5_path=$(pwd)/yolov5
+yolov5_path=$(pwd)/neural_networks/yolov5
 
 # Check if the yolov5 folder exists
 if [ ! -d "$yolov5_path" ]; then

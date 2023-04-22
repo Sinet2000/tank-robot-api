@@ -2,8 +2,8 @@
 *.pyc
 __pycache__/
 
-# Ingore yolov5 folder
-yolov5/
+# Ignore files and subdirectories inside the neural_networks folder
+/neural_networks/*
 
 # Ignore Flask cache and session files
 instance/

@@ -520,7 +520,7 @@ def detect_object_yolov():
         os.system(f'rm -r {detected_img_result_folder_path}/')
 
     # Run detection command
-    command = f"python yolov5/detect.py --weights best.pt --source {image_path} --conf 0.4 --project result_detect/"
+    command = f"python neural_networks/yolov5/detect.py --weights best.pt --source {image_path} --conf 0.4 --project result_detect/"
     os.system(command)
 
     # Return detected image to client
