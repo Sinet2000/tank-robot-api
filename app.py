@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, Response, send_file, make_response
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 import pigpio
+import requests
 import RPi.GPIO as GPIO
 import time
 import io
@@ -489,10 +490,22 @@ def capture_image():
         image_data = base64.b64encode(f.read()).decode('utf-8')
 
     # Return the image data and filename
-    return {
+    post_data = {
         'imageData': image_data,
         'fileName': filename
     }
+
+    # Send the POST request to the API
+    # response = requests.post('http://localhost:7200/detect', json=post_data)
+
+    # # Check the response from the API
+    # if response.status_code == 200:
+    #     print('Image sent successfully.')
+    # else:
+    #     print('Failed to send image.')
+
+    # Return the image data and filename
+    return post_data
     
     # Set the cache-control header to prevent caching
     # response = make_response(send_file(image_path, mimetype="image/jpeg"))
